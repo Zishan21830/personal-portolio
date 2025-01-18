@@ -2,4 +2,8 @@
     font-family: 'Edensor';
     src: url('../assets//fonts/Edensor-FREE.otf') format('truetype');
   }
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../assets//fonts/Unbounded-VariableFont_wght.ttf') format('truetype');
+  }
   

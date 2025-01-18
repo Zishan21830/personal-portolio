@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/fonts.css";
 import Navbar from "./Navbar.jsx";
 
+import homePageImage from "../assets/images/home-page-image.jpg"
+
 const Home = () => {
 
   // create an array for navigation items
@@ -15,7 +17,7 @@ const Home = () => {
       <div className="h-full flex flex-col gap-5 justify-center items-center">
       <div className="flex items-center relative">
         {/* <div className="w-24 h-24 rounded-full bg-white"></div> */}
-        <img src="https://plus.unsplash.com/premium_photo-1733514433474-e91aeaed25fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8" alt="" className='w-[10rem] h-[10rem] rounded-full'/>
+        <img src={homePageImage} alt="home page image" className='w-[10rem] h-[10rem] rounded-full transition-all hover:scale-125'/>
         <div className="flex justify-center gap-2 bg-white font-edensor px-2 py-1 rounded-2xl absolute -right-10">
           <span>Zishan</span>
           <span className="hover:rotate-12 hover:scale-150">✌️</span>

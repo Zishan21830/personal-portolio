@@ -16,6 +16,7 @@ export default {
       lato : ["Lato", "serif"],
       poppins : ["Poppins", "serif"],
       edensor: ['Edensor', 'sans-serif'],
+      unbounded: ['Unbounded', 'sans-serif'],
     },
     theme: {
     screens: {
