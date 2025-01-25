@@ -8,12 +8,14 @@ const Skills = () => {
   let [arrowRotated, setArrowRoated] = useState(true);
 
   const handleSkillCardVisibility = (index) => {
-    setArrowRoated((a) => !a);
-    if (skillExpand != null) {
-      setSkillExpand(null);
-    } else {
-      setSkillExpand(index);
-    }
+    // setArrowRoated((a) => !a);
+    (skillExpand != index) ? setArrowRoated((a) => !a) : setArrowRoated((a) => a);
+    // if (skillExpand === null) {
+    //   setSkillExpand(index);
+    // } else {
+    //   setSkillExpand(null);
+    // }
+    setSkillExpand(index);
   };
   return (
     // Skills main container
@@ -52,15 +54,15 @@ const Skills = () => {
                     return (
                       //skills details
                       <div
-                        className="w-28 min-h-16 flex flex-col items-center bg-gray rounded-md p-3 mt-2"
+                        className="w-28 min-h-16 flex flex-col items-center bg-gray rounded-md py-3"
                         key={idx}
                       >
                         <img
                           src={skillDetails.imageLink}
                           alt={skillDetails.name + "-logo"}
-                          className="w-12 h-12"
+                          className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
                         />
-                        <p className="text-black font-edensor">
+                        <p className="text-black font-edensor text-sm sm:text-base">
                           {skillDetails.name}
                         </p>
                       </div>
